@@ -24,6 +24,15 @@ Especially the first time this process will take some time, but eventually the
 invitation to visit http://localhost:1337 will pop up
 (visit http://localhost:1337/admin/ to go to the admin panel)
 
+### Default username / password
+To login to the Strapi backend use the following credentials:
+
+Username: `admin@admin.com`
+
+Password: `Admin123`
+
+###
+
 ## Acknowledgments
 
 * [strapi-v4 docker-compose yaml](https://github.com/seralaci/strapi-docker-v4)
