@@ -16,18 +16,11 @@ git clone https://github.com/joriskes/quiz.git
 cd quiz
 docker-compose up
 ```
-
-#### Strapi backend:
-Especially the first time this process will take some time, but eventually the
-invitation to visit http://localhost:1337 will pop up in your terminal
-(visit http://localhost:1337/admin/ to go to the admin panel)
-
-#### React frontend:
-The (create-react-app based) react frontend is started simultaneously with the strapi 
-backend and can be found here: http://localhost:3000 after it's started
+Especially the first time this process will take some time
 
 ## Backend
-- Clean Strapi (https://strapi.io/) install
+The backend is based upon Strapi (https://strapi.io/). 
+The Strapi admin panel can be visited using http://localhost:1337/admin/
 
 ### Default username / password
 To login to the Strapi backend use the following credentials:
@@ -47,6 +40,9 @@ Components:
   - `QuestionOpen` open question type
 
 ## Frontend
+The frontend can be found here: http://localhost:3000
+
+### Libraries
 - React (https://reactjs.org/)
 - Boilerplate using `create-react-app` (https://create-react-app.dev/) using typescript template
 - ESLint + Prettier + eslint-config-prettier + airbnb defaults (and some minor changes)
