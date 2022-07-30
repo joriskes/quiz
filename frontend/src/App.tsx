@@ -1,17 +1,27 @@
 import React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import Page from './containers/Page';
 
+// Initialize MUI in dark mode by default
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
   },
 });
 
+// Setup react-query
+const queryClient = new QueryClient();
+
 function App() {
   return (
-    <ThemeProvider theme={darkTheme}>
-      <main>This app is using the dark mode</main>
-    </ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider theme={darkTheme}>
+        <CssBaseline />
+        <Page />
+      </ThemeProvider>
+    </QueryClientProvider>
   );
 }
 

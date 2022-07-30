@@ -12,19 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Subtitle": {
+    "subtitle": {
       "type": "string"
     },
-    "TimeLimit": {
+    "timeLimit": {
       "type": "integer",
       "required": true,
       "min": 0,
       "default": 20
     },
-    "Media": {
+    "media": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -35,7 +35,7 @@
         "audios"
       ]
     },
-    "QuestionType": {
+    "questiontype": {
       "type": "dynamiczone",
       "components": [
         "question-types.question-multiple-choice",

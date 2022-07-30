@@ -2,23 +2,24 @@
   "collectionName": "components_question_types_question_multiple_choices",
   "info": {
     "displayName": "QuestionMultipleChoice",
-    "icon": "list-ol"
+    "icon": "list-ol",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "OptionA": {
+    "optionA": {
       "type": "string"
     },
-    "OptionB": {
+    "optionB": {
       "type": "string"
     },
-    "OptionC": {
+    "optionC": {
       "type": "string"
     },
-    "OptionD": {
+    "optionD": {
       "type": "string"
     },
-    "Answer": {
+    "answer": {
       "type": "enumeration",
       "enum": [
         "A",
