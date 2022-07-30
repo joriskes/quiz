@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_question_types_question_multiple_choices",
+  "info": {
+    "displayName": "QuestionMultipleChoice",
+    "icon": "list-ol"
+  },
+  "options": {},
+  "attributes": {
+    "OptionA": {
+      "type": "string"
+    },
+    "OptionB": {
+      "type": "string"
+    },
+    "OptionC": {
+      "type": "string"
+    },
+    "OptionD": {
+      "type": "string"
+    },
+    "Answer": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    }
+  }
+}

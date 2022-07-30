@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_question_types_question_opens",
+  "info": {
+    "displayName": "QuestionOpen",
+    "icon": "stopwatch"
+  },
+  "options": {},
+  "attributes": {
+    "Answer": {
+      "type": "string"
+    }
+  }
+}

@@ -27,14 +27,15 @@ Username: `admin@admin.com`
 
 Password: `Admin123`
 
-## Tables / strapi collections
-Up for debate
-- `quiz` A quiz (bag of questions)
-- `quiz-question` A question part of the quiz
-- `quiz-question-answer` Optional answers for questions (multiple choice options)
-- `quiz-page (tussenpaginas)` A questionless content page somewhere in the quiz
-- `game` A quiz in progress
-- `game-player` A single player inside of a game
+## Strapi setup
+Content-types:
+- `Quiz` A quiz (bag of questions), a quiz can be played
+- `Question` The base question part, not containing any specific question type values
+
+Components:
+- `Question-types` 
+  - `QuestionMultipleChoice` multiple choice question type
+  - `QuestionOpen` open question type
 
 ## Developer notes
 `/data/data.db` is the location of the database for strapi. It is intentionally part of the github project
