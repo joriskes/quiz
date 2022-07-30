@@ -49,6 +49,9 @@ Components:
 ## Frontend
 - React (https://reactjs.org/)
 - Boilerplate using `create-react-app` (https://create-react-app.dev/) using typescript template
+- ESLint + Prettier + eslint-config-prettier + airbnb defaults (and some minor changes)
+- Material ui 5 (https://mui.com/)
+- React-Query (https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/)
 
 ## Developer notes
 `/data/data.db` is the location of the database for strapi. It is intentionally part of the github project
