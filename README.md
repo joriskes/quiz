@@ -1,10 +1,6 @@
 # Quiz
 
-Simple quiz system using a strapi / mariadb backend and a custom react frontend  
-
-## Description
-
-An in-depth paragraph about your project and overview of use.
+Pubquiz system using a strapi / mariadb backend and a custom react frontend  
 
 ## Getting Started
 
@@ -21,7 +17,7 @@ cd quiz
 docker-compose up
 ```
 Especially the first time this process will take some time, but eventually the 
-invitation to visit http://localhost:1337 will pop up
+invitation to visit http://localhost:1337 will pop up in your terminal
 (visit http://localhost:1337/admin/ to go to the admin panel)
 
 ### Default username / password
@@ -39,6 +35,9 @@ Up for debate
 - `quiz-page (tussenpaginas)` A questionless content page somewhere in the quiz
 - `game` A quiz in progress
 - `game-player` A single player inside of a game
+
+## Developer notes
+`/data/data.db` is the location of the database for strapi. It is intentionally part of the github project
 
 ## Acknowledgments
 
