@@ -1,7 +1,7 @@
 <template>
   <use-element-visibility v-slot="{ isVisible }" class="card">
     <div class="card-img" v-if="item.attributes.featuredImage && item.attributes.featuredImage.data">
-      <img :src="item.attributes.featuredImage.data.attributes.url" :width="viewportWidth * 0.35"
+     <cloudinary-image :img="item.attributes.featuredImage.data" :width="viewportWidth * 0.35"
         :height="viewportWidth * 0.35 * 0.75" class="card-img-top" :preload="isVisible" />
     </div>
     <div class="card-body">
