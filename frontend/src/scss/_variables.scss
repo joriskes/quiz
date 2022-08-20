@@ -1,0 +1,43 @@
+/***************************************
+ * Variables
+ ***************************************/
+:root {
+//   --color-black: #231F20;
+//   --color-orange: #FF4300;
+//   --color-purple: #770971;
+  --base-spacing: calc(1rem + .2vw);
+}
+
+@function base-spacing($multiplier: 1) {
+  @return calc(var(--base-spacing) * #{$multiplier});
+}
+
+// $theme-colors: (
+//   "primary": #231F20,
+// );
+
+// $enable-rounded: false;
+
+// $prefix: 'fk-';
+// $btn-border-width: 0;
+// $btn-focus-width: 0;
+
+// $body-color: #231F20;
+// $link-color: $body-color;
+
+// $font-family-base: 'Barlow',
+//   sans-serif;
+
+// $headings-font-family: 'n27bold',
+//   $font-family-base;
+// $headings-font-weight: 700;
+// $headings-line-height: .9;
+
+// $input-btn-padding-y: 1rem;
+// $input-btn-padding-x: 2rem;
+// $input-btn-font-family: $headings-font-family;
+
+// $card-border-width: 0;
+// $card-bg: none;
+
+// $gradient-h: linear-gradient(20deg, var(--color-purple), var(--color-orange));
