@@ -1,6 +1,6 @@
 # Quiz
 
-Pubquiz system using a strapi / mariadb backend and a custom react frontend  
+Pubquiz system using a strapi / sqlite backend and a custom react frontend  
 
 ## Getting Started
 
@@ -50,4 +50,5 @@ The frontend can be found here: http://localhost:3000
 - React-Query (https://tanstack.com/query/v4)
 
 ## Developer notes
-`/data/data.db` is the location of the database for strapi. It is intentionally part of the github project
+`/data/data.db` is the location of the database for strapi. The sqlite database is intentionally added to version control,
+this way the strapi content-types are in sync with the frontend 
