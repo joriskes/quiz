@@ -8,11 +8,8 @@
       <h2 class="card-title">
         {{ item.attributes.title }}
       </h2>
-      <h5 class="card-client">
-        {{ item.attributes.clientName }}
-      </h5>
       <router-link class="stretched-link" aria-current="page" :aria-label="item.attributes.title"
-        :to="`/${locale}/work/${item.attributes.slug}`" />
+        :to="`/quiz/${item.id}`" />
     </div>
   </use-element-visibility>
 </template>
@@ -21,12 +18,9 @@
 // imports
 import { computed } from "vue";
 import { UseElementVisibility } from "@vueuse/components";
-import { useI18n } from "vue-i18n";
-
-const { locale } = useI18n();
 
 defineProps({
-  item: { type: Object, required: true },
+  item: { type: Object, required: true }
 });
 
 const viewportWidth = computed(() => window.innerWidth);

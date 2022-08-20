@@ -1,8 +1,23 @@
 <template>
-  <router-view />
+  <strapi-site :strapi-url="`${url}/api/`" :strapi-key="key">
+    <page-header :key="$route.path" />
+      <router-view v-slot="{ Component, route }">
+        <component :is="Component" :key="route.path" />
+      </router-view>
+
+      <page-footer :key="$route.path" />
+  </strapi-site>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
+//imports
+import PageHeader from "@/components/PageHeader.vue";
+import PageFooter from "@/components/PageFooter.vue";
+
+//strapi location and key
+const key = import.meta.env.VITE_API_KEY;
+const url = import.meta.env.VITE_BASE_URL;
+
 </script>
 
 <style lang="scss">

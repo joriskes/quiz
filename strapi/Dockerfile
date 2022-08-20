@@ -1,11 +1,13 @@
-FROM node:16
+FROM node:alpine
+
+RUN apk add g++ make py3-pip
 
 EXPOSE 1337
+WORKDIR /strapi
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm i
 
-WORKDIR /srv/app
+COPY ./ ./
 
-ADD /bin/docker-entrypoint.sh /usr/local/bin/
-
-ENTRYPOINT ["docker-entrypoint.sh"]
-
-CMD [ "npm", "run", "develop" ]
+CMD ["npm", "run", "develop"]

@@ -1,6 +1,6 @@
 # Quiz
 
-Pubquiz system using a strapi / sqlite backend and a custom react frontend  
+Pubquiz system using a strapi / sqlite backend and a custom VUE frontend  
 
 ## Getting Started
 
