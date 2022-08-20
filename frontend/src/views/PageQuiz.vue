@@ -1,8 +1,11 @@
 <template>
   <main id="page-home">
-    <strapi-data :endpoint="`quiz/${route.params.id}`" v-slot="{ data }" :populate="['*']">
+    <strapi-data :endpoint="`quizzes/${route.params.id}`" v-slot="{ data }" :populate="['questions', 'questions.*']">
       <template v-if="data">
-        {{ data }}
+        <h1>{{ data.title }}</h1>
+        <template v-for="item in data.attributes.questions.data" :key="`card-single-${item.id}`">
+          <default-item :item="item" />
+        </template>
       </template>
     </strapi-data>
   </main>

@@ -8,9 +8,6 @@
       <h2 class="card-title">
         {{ item.attributes.title }}
       </h2>
-      <h5 class="card-client">
-        {{ item.attributes.clientName }}
-      </h5>
       <router-link class="stretched-link" aria-current="page" :aria-label="item.attributes.title"
         :to="`/quiz/${item.id}`" />
     </div>
@@ -23,7 +20,7 @@ import { computed } from "vue";
 import { UseElementVisibility } from "@vueuse/components";
 
 defineProps({
-  item: { type: Object, required: true },
+  item: { type: Object, required: true }
 });
 
 const viewportWidth = computed(() => window.innerWidth);
