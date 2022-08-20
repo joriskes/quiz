@@ -12,10 +12,10 @@
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
     "composite": true,
-    "baseUrl": "./frontend",
+    "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./src/*"
+        "src/*"
       ]
     }
   },
