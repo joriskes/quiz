@@ -16,7 +16,6 @@ services:
     volumes:
       - ./frontend:/usr/src/app/frontend
     stdin_open: true
-    command: sh -c 'cd frontend && yarn start'
     ports:
       - '3000:3000'
     tty: true
