@@ -9,6 +9,9 @@ import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    port: 3000,
+  },
   plugins: [
     vue(),
     VueI18nPlugin({
